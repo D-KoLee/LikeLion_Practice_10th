@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>기념일 계산기</title>
+    <script>
+        function dday() {
+            var now = new Date();
+            var day1 = document.getElementById("dayname");
+            var day2 = document.getElementById("day");
+            /*var timeDiff = day2.getTime() - now.getTime();
+            var day3 = Math.floor(timeDiff / (1000 * 60 * 60 * 24) + 1);*/
+            alert(day1.value + " ");
+        }
+    </script>
+</head>
+<body>
+    <form name="name">
+        기념일 이름 : <input type="text" id="dayname">    
+    </form>
+    <form name="dateday">
+        기념일 날짜 : <input type="date" id="day">
+        <input type="button" onclick="dday()" value="입력">
+    </form>
+</body>
+</html>
